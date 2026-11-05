@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['icon.svg'],
       manifest: {
         name: 'Delivery PWA',
         short_name: 'Delivery',
@@ -16,6 +17,7 @@ export default defineConfig({
         background_color: '#171717',
         display: 'standalone',
         start_url: '/',
+        scope: '/',
         icons: [
           {
             src: '/icon.svg',
